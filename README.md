@@ -1,7 +1,6 @@
 # Sample QA Website
 
-This repository contains a small static storefront website intended for testing
-another feedback or QA tool.
+This repository contains a small static storefront website intended for testing & demonstrating Mosaic.
 
 ## Run locally
 
