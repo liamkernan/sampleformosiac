@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Supply Co.</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      Free shiping on orders over $75. New spring drop is live now.
+    </div>
+
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Modern home goods</p>
+        <a href="#" class="brand-name">Northstar Supply Co.</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#featured">Feautured</a>
+        <a href="#collections">Collections</a>
+        <a href="#bundles">Bundles</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#newsletter">Newseltter</a>
+      </nav>
+
+      <button class="cart-button" id="cartButton" type="button">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Small batch decor for slower living</p>
+          <h1>Objects that make a room feel calm, usefull, and personal.</h1>
+          <p class="hero-text">
+            Shop a sample storefront with tactile decor, kitchen essentials,
+            and quiet statement pieces sourced from independant makers.
+          </p>
+          <div class="hero-actions">
+            <a href="#featured" class="button primary-button">Shop Best Sellers</a>
+            <a href="#collections" class="button secondary-button">Explore Collecitons</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>1,200+</strong> happy custumers</li>
+            <li><strong>36 hr</strong> average dispatch</li>
+            <li><strong>4.8/5</strong> average product rating</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card-large">
+            <span class="tag">Top Pick</span>
+            <h2>Stoneware Breakfast Set</h2>
+            <p>Matte ceramic bowls and mugs in a soft dune glaze.</p>
+            <button class="inline-cart" type="button" data-product="Stoneware Breakfast Set">
+              Add to cart
+            </button>
+          </div>
+          <div class="hero-card hero-card-small">
+            <p class="card-label">Weekend edit</p>
+            <p class="card-price">$48 bundle</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="collections-section" id="collections">
+        <div class="section-heading">
+          <p class="eyebrow">Browse by room</p>
+          <h2>Popular collections</h2>
+        </div>
+
+        <div class="collection-grid">
+          <article class="collection-card">
+            <div class="collection-graphic kitchen"></div>
+            <h3>Kitchen</h3>
+            <p>Warm ceramics, linen towles, and pantry storage.</p>
+          </article>
+          <article class="collection-card shifted-card">
+            <div class="collection-graphic living"></div>
+            <h3>Living Room</h3>
+            <p>Textural throws, candle holders, and lounge accents.</p>
+          </article>
+          <article class="collection-card">
+            <div class="collection-graphic workspace"></div>
+            <h3>Workspace</h3>
+            <p>Desk trays, paper goods, and simple lighting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="value-strip">
+        <article class="value-item">
+          <p class="value-kicker">01</p>
+          <h3>Small maker network</h3>
+          <p>Pieces sourced from studios across the U.S. and a few eurpoean workshops.</p>
+        </article>
+        <article class="value-item">
+          <p class="value-kicker">02</p>
+          <h3>Gift-ready packging</h3>
+          <p>Each order is wrapped with recycled paper and a short care card.</p>
+        </article>
+        <article class="value-item value-item-lower">
+          <p class="value-kicker">03</p>
+          <h3>Easy returns</h3>
+          <p>Return unworn, unused, or unopened goods within 20 days of recieveing them.</p>
+        </article>
+      </section>
+
+      <section class="featured-section" id="featured">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Editor picks</p>
+            <h2>Featured arrivals</h2>
+          </div>
+
+          <div class="filter-row" role="tablist" aria-label="Product filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="decor">Decor</button>
+            <button class="filter-button" type="button" data-filter="kitchen">Kitchen</button>
+            <button class="filter-button" type="button" data-filter="office">Office</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="decor">
+            <div class="product-image product-image-1"></div>
+            <div class="product-info">
+              <h3>Sandstone Vase</h3>
+              <p>Hand-finished vessel with a chalky texture and narrow neck.</p>
+              <div class="product-meta">
+                <span>$42</span>
+                <button class="inline-cart" type="button" data-product="Sandstone Vase">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card-offset" data-category="kitchen">
+            <div class="product-image product-image-2"></div>
+            <div class="product-info">
+              <h3>Oak Serving Board</h3>
+              <p>Solid hardwood board with a leather hanging loop.</p>
+              <div class="product-meta">
+                <span>$36</span>
+                <button class="inline-cart" type="button" data-product="Oak Serving Board">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="office">
+            <div class="product-image product-image-3"></div>
+            <div class="product-info">
+              <h3>Canvas Desk Tray</h3>
+              <p>Soft-sided tray for cords, notes, and other desk clutter.</p>
+              <div class="product-meta">
+                <span>$28</span>
+                <button class="inline-cart" type="button" data-product="Canvas Desk Tray">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="decor">
+            <div class="product-image product-image-4"></div>
+            <div class="product-info">
+              <h3>Cloud Glass Candle</h3>
+              <p>Mineral wax candle with cedar, iris, and a touch of smoke.</p>
+              <div class="product-meta">
+                <span>$24.0</span>
+                <button class="inline-cart" type="button" data-product="Cloud Glass Candle">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bundles-section" id="bundles">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Starter bundles</p>
+            <h2>Room-ready sets</h2>
+          </div>
+          <p class="section-note">Built for quicker styling when you dont want to mix and match everything yourself.</p>
+        </div>
+
+        <div class="bundle-layout">
+          <article class="bundle-spotlight">
+            <div class="bundle-copy">
+              <span class="tag dark-tag">Most ordered</span>
+              <h3>Calm Kitchen Kit</h3>
+              <p>
+                Includes the stoneware breakfast set, a linen towel pair, and a
+                hand-finished serving board in one soft-toned bundle.
+              </p>
+              <ul class="bundle-points">
+                <li>Save 14% compared to seperate items</li>
+                <li>Ships in 1 box with gift-ready wrap</li>
+                <li>Most popular with first-time shoppers</li>
+              </ul>
+              <div class="bundle-actions">
+                <button class="button primary-button inline-cart" type="button" data-product="Calm Kitchen Kit">
+                  Add bundle
+                </button>
+                <span class="bundle-price">$96</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="mini-bundle-grid">
+            <article class="mini-bundle-card">
+              <p class="mini-bundle-kicker">Desk Reset</p>
+              <h3>Workspace Pairing</h3>
+              <p>Tray, notebook, and brass clips with a light productivity angle.</p>
+              <button class="inline-cart" type="button" data-product="Workspace Pairing">Quick add</button>
+            </article>
+            <article class="mini-bundle-card lifted-card">
+              <p class="mini-bundle-kicker">Soft Glow</p>
+              <h3>Evening Wind Down</h3>
+              <p>Candle, catchall dish, and a woven throw for the sofa corner.</p>
+              <button class="inline-cart" type="button" data-product="Evening Wind Down">Quick add</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="reviews">
+        <div class="section-heading">
+          <p class="eyebrow">What people say</p>
+          <h2>Recent reviews</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <p class="review-quote">
+              “The textures feel much more expenssive than the price. The vase
+              arrived packed perfectly.”
+            </p>
+            <p class="review-author">Ariana L., Boston</p>
+          </article>
+          <article class="review-card">
+            <p class="review-quote">
+              “Fast delivery and the breakfast set instantly made our kitchen
+              feel more pulled together.”
+            </p>
+            <p class="review-author">Miles T., Denver</p>
+          </article>
+          <article class="review-card wide-review">
+            <p class="review-quote">
+              “We ordered gifts for the office and every piece looked thoughtful
+              and premium without being flashy.”
+            </p>
+            <p class="review-author">Nina P., Seattle</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="journal-section">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">From the journal</p>
+            <h2>Styling ideas and care guides</h2>
+          </div>
+          <a href="#" class="text-link">Read all articals</a>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card">
+            <div class="journal-image journal-image-1"></div>
+            <div class="journal-copy">
+              <p class="journal-meta">Guide • 4 min read</p>
+              <h3>How to layer a shelf without making it feel crowded</h3>
+              <p>Three easy anchors, one texture rule, and where negative space helps the most.</p>
+            </div>
+          </article>
+          <article class="journal-card journal-card-offset">
+            <div class="journal-image journal-image-2"></div>
+            <div class="journal-copy">
+              <p class="journal-meta">Care • 6 min read</p>
+              <h3>Candle care basics for a cleaner, slower burn</h3>
+              <p>Trim tips, first-burn timing, and one common mistake pepole make.</p>
+            </div>
+          </article>
+          <article class="journal-card">
+            <div class="journal-image journal-image-3"></div>
+            <div class="journal-copy">
+              <p class="journal-meta">Story • 3 min read</p>
+              <h3>Inside our latest studio visit with a ceramicist in Maine</h3>
+              <p>A quick look at glaze tests, shelf drying, and the pieces we chose this season.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">Support</p>
+          <h2>Common questions</h2>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <article class="faq-item active">
+            <button class="faq-question" type="button">
+              When will my order arive?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Most orders leave our studio in 1 to 2 business days, and standard
+                shipping usually lands within 3 to 5 more.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              Do you offer gift notes or reciepts without pricing?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Mark the order as a gift at checkout and we will remove
+                pricing details from the package.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              Can I return sale items?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Final sale items are not eligable for returns, but damaged items
+                should still be reported within 7 days.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter-section" id="newsletter">
+        <div class="newsletter-copy">
+          <p class="eyebrow">Stay in touch</p>
+          <h2>Get product drops and styling notes in your inbox.</h2>
+          <p>
+            Sign up for a monthly note with launch updates, room ideas, and a
+            few discount codes.
+          </p>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="emailInput">Email adress</label>
+          <div class="newsletter-controls">
+            <input
+              id="emailInput"
+              name="email"
+              type="email"
+              placeholder="you@examplecom"
+              required
+            />
+            <button type="submit" class="button primary-button">Subcribe</button>
+          </div>
+          <p class="form-note">We send about 1 email per month. Maybe 2 on holydays.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a href="#" class="brand-name footer-brand">Northstar Supply Co.</a>
+        <p class="footer-copy">
+          Thoughtful goods for the rooms you use every day.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Trade Program</a>
+        <a href="#">Store Locaor</a>
+        <a href="#">Contaxt</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
