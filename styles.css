@@ -310,10 +310,6 @@ input {
   padding: 1rem;
 }
 
-.shifted-card {
-  transform: translateY(18px);
-}
-
 .collection-graphic,
 .product-image {
   border-radius: calc(var(--radius-lg) - 8px);
@@ -723,7 +719,6 @@ input {
   }
 
   .product-card-offset,
-  .shifted-card,
   .hero-card-small,
   .value-item-lower,
   .journal-card-offset {
