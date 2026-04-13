@@ -380,7 +380,7 @@ input {
 }
 
 .product-card-offset {
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .product-image {
