@@ -139,17 +139,17 @@
         </div>
 
         <div class="collection-grid">
-          <article class="collection-card">
+          <article class="collection-card collection-card-clickable" data-collection="kitchen">
             <div class="collection-graphic kitchen"></div>
             <h3>Kitchen</h3>
             <p>Warm ceramics, linen towles, and pantry storage.</p>
           </article>
-          <article class="collection-card shifted-card">
+          <article class="collection-card shifted-card collection-card-clickable" data-collection="living">
             <div class="collection-graphic living"></div>
             <h3>Living Room</h3>
             <p>Textural throws, candle holders, and lounge accents.</p>
           </article>
-          <article class="collection-card">
+          <article class="collection-card collection-card-clickable" data-collection="workspace">
             <div class="collection-graphic workspace"></div>
             <h3>Workspace</h3>
             <p>Desk trays, paper goods, and simple lighting.</p>
@@ -377,6 +377,26 @@
         <a href="#">Contaxt</a>
       </div>
     </footer>
+
+    <div class="collection-modal-overlay" id="collectionModalOverlay" aria-hidden="true">
+      <div class="collection-modal" id="collectionModal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close">&times;</button>
+        <div class="modal-image" id="modalImage"></div>
+        <div class="modal-body">
+          <p class="eyebrow" id="modalEyebrow"></p>
+          <h2 id="modalTitle"></h2>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-items" id="modalItems"></div>
+          <div class="modal-reviews" id="modalReviews">
+            <h3>What customers say</h3>
+            <div class="modal-review-list" id="modalReviewList"></div>
+          </div>
+          <div class="modal-footer-actions">
+            <button class="button primary-button inline-cart" type="button" id="modalAddToCart">Shop this collection</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
