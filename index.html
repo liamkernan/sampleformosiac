@@ -265,30 +265,30 @@
         </div>
 
         <div class="journal-grid">
-          <article class="journal-card">
+          <button class="journal-card journal-card-clickable" type="button" data-article="shelf-styling">
             <div class="journal-image journal-image-1"></div>
             <div class="journal-copy">
               <p class="journal-meta">Guide • 4 min read</p>
               <h3>How to layer a shelf without making it feel crowded</h3>
               <p>Three easy anchors, one texture rule, and where negative space helps the most.</p>
             </div>
-          </article>
-          <article class="journal-card journal-card-offset">
+          </button>
+          <button class="journal-card journal-card-offset journal-card-clickable" type="button" data-article="candle-care">
             <div class="journal-image journal-image-2"></div>
             <div class="journal-copy">
               <p class="journal-meta">Care • 6 min read</p>
               <h3>Candle care basics for a cleaner, slower burn</h3>
               <p>Trim tips, first-burn timing, and one common mistake pepole make.</p>
             </div>
-          </article>
-          <article class="journal-card">
+          </button>
+          <button class="journal-card journal-card-clickable" type="button" data-article="studio-visit">
             <div class="journal-image journal-image-3"></div>
             <div class="journal-copy">
               <p class="journal-meta">Story • 3 min read</p>
               <h3>Inside our latest studio visit with a ceramicist in Maine</h3>
               <p>A quick look at glaze tests, shelf drying, and the pieces we chose this season.</p>
             </div>
-          </article>
+          </button>
         </div>
       </section>
 
@@ -394,6 +394,18 @@
           <div class="modal-footer-actions">
             <button class="button primary-button inline-cart" type="button" id="modalAddToCart">Shop this collection</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="journal-modal-overlay" id="journalModalOverlay" aria-hidden="true">
+      <div class="journal-modal" id="journalModal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="journalModalClose" type="button" aria-label="Close">&times;</button>
+        <div class="journal-modal-image" id="journalModalImage"></div>
+        <div class="journal-modal-body">
+          <p class="journal-modal-meta" id="journalModalMeta"></p>
+          <h2 id="journalModalTitle"></h2>
+          <div class="journal-modal-content" id="journalModalContent"></div>
         </div>
       </div>
     </div>
