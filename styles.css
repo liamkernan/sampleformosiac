@@ -699,15 +699,13 @@ input {
   animation: slideUp 300ms ease;
 }
 
+.article-modal {
+  width: min(760px, 90vw);
+}
+
 @keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .modal-close,
@@ -761,9 +759,18 @@ input {
   margin: 1rem 0;
 }
 
+.article-intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
 .article-modal-content h3 {
-  margin: 1.5rem 0 0.75rem;
-  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+  font-size: 1.25rem;
 }
 
 .article-modal-content ul {
@@ -773,7 +780,8 @@ input {
 }
 
 .article-modal-content li {
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
+  line-height: 1.75;
 }
 
 .modal-image {
